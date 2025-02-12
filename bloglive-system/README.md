@@ -15,22 +15,6 @@ BlogLive 是一个使用 Java 和 H2 数据库构建的轻量级博客系统。�
 - **H2 数据库驱动**：H2 数据库驱动程序包含在 `lib` 目录中。
 
 ## 目录结构
-bloglive-system/
-├── src/
-│   └── com/
-│       └── bloglive/
-│           ├── DatabaseManager.java
-│           ├── FileUtils.java
-│           ├── EncryptionUtils.java
-│           ├── LogManager.java
-│           ├── AuthManager.java
-│           └── BlogLiveServer.java
-├── lib/
-│   └── h2-1.4.199.jar
-├── .gitignore
-├── README.md
-└── pom.xml
-
 
 ## 安装指南
 1. **克隆代码仓库**
