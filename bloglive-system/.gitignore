@@ -1,0 +1,238 @@
+# 忽略操作系统相关的文件
+# 忽略 Windows 系统生成的临时文件和索引文件，如缩略图缓存和日志文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 忽略 macOS 系统生成的文件和文件夹，如资源 forks、Spotlight 索引文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 忽略 Linux 系统生成的文件
+*~
+
+# 忽略常见的应用程序生成的文件
+# 忽略 Photoshop 自动生成的文件
+*.psd
+*.psb
+
+# 忽略 Microsoft Office 自动生成的临时文件
+~$*
+
+# 忽略虚拟机相关文件
+.vbox
+
+# 忽略嵌入式系统相关文件
+*.elf
+*.hex
+
+# 忽略 Python 项目相关文件
+# 忽略 Python 编译生成的字节码文件
+*.pyc
+__pycache__
+
+# 忽略 Python 虚拟环境文件
+venv/
+env/
+
+# 忽略 Node.js 项目相关文件
+# 忽略 npm 和 yarn 安装的依赖包
+node_modules/
+yarn.lock
+package-lock.json
+
+# 忽略 Java 项目相关文件
+# 忽略 Maven 生成的依赖缓存和目标文件夹
+.target/
+.mvn/
+mvnw
+mvnw.cmd
+*.jar
+*.class
+
+# 忽略 Gradle 生成的文件
+.gradle/
+build/
+
+# 忽略 IntelliJ IDEA 项目相关文件
+# 忽略 IntelliJ IDEA 的配置文件和缓存
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# 忽略 Eclipse 项目相关文件
+.classpath
+.project
+.settings/
+
+# 忽略 Android Studio 项目相关文件
+captures/
+build/
+.gradle/
+local.properties
+gradle.properties
+gradlew
+gradlew.bat
+
+# 忽略日志文件和临时文件
+*.log
+*.tmp
+*.bak
+*.old
+*.temp
+
+# 忽略备份文件
+*.bak
+*.backup
+
+# 忽略版本控制系统相关文件
+# 忽略 Git 的 lfs 文件
+.git/lfs/locks/
+
+# 忽略远程仓库同步相关文件
+# 忽略 Mercurial 的文件
+.hg/
+
+# 忽略 Subversion 的文件
+.svn/
+
+# 忽略 Bazaar 的文件
+.bazaar/
+
+# 忽略二进制文件
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 忽略大型文件和数据集
+data/
+datasets/
+
+# 忽略敏感信息文件
+env/*
+.settings/
+config/local/*
+.whiskey
+
+# 中文操作指南 文件说明
+
+## 1. 操作系统相关的文件
+
+### Windows 系统
+- `Thumbs.db`：Windows 系统生成的缩略图缓存文件，用于存储文件夹中图像文件的缩略图信息。
+- `ehthumbs.db`：Windows 系统生成的增强型缩略图缓存文件，用于存储更高质量的缩略图信息。
+- `Desktop.ini`：Windows 系统生成的桌面配置文件，用于存储文件夹的个性化设置。
+
+### macOS 系统
+- `.DS_Store`：macOS 系统生成的文件夹配置文件，用于存储文件夹的视图设置、图标位置等信息。
+- `.AppleDouble`：macOS 系统生成的文件，用于存储文件的资源 fork 数据。
+- `.LSOverride`：macOS 系统生成的文件，用于存储文件夹的自定义图标设置。
+
+### Linux 系统
+- `*~`：许多 Linux 文本编辑器（如 Vim 和 Emacs）在编辑文件时生成的备份文件。
+
+## 2. 应用程序生成的文件
+
+### Photoshop
+- `*.psd`：Adobe Photoshop 生成的原始图像文件格式。
+- `*.psb`：Adobe Photoshop 生成的大型文档格式。
+
+### Microsoft Office
+- `~$*`：Microsoft Office 生成的临时文件，通常用于保存用户的编辑进度。
+
+### 虚拟机
+- `.vbox`：Oracle VirtualBox 生成的虚拟机配置文件。
+
+### 嵌入式系统
+- `*.elf`：嵌入式系统中常见的可执行文件格式。
+- `*.hex`：嵌入式系统中常见的十六进制文件格式。
+
+## 3. 开发项目相关的文件
+
+### Python 项目
+- `*.pyc`：Python 编译生成的字节码文件，用于提高程序运行效率。
+- `__pycache__`：Python 3 存储 `*.pyc` 文件的目录。
+- `venv/` 和 `env/`：Python 虚拟环境目录，用于隔离项目依赖。
+
+### Node.js 项目
+- `node_modules/`：Node.js 项目中通过 npm 或 yarn 安装的依赖包目录。
+- `yarn.lock` 和 `package-lock.json`：Node.js 项目中用于锁定依赖版本的文件。
+
+### Java 项目
+- `.target/` 和 `.mvn/`：Maven 项目的构建输出目录和配置缓存目录。
+- `mvnw` 和 `mvnw.cmd`：Maven Wrapper 的可执行文件。
+- `*.jar` 和 `*.class`：Java 项目中生成的 JAR 文件和字节码文件。
+
+### Gradle 项目
+- `.gradle/`：Gradle 项目的缓存目录。
+- `build/`：Gradle 项目的构建输出目录。
+
+## 4. IDE（集成开发环境）相关的文件
+
+### IntelliJ IDEA
+- `.idea/`：IntelliJ IDEA 的项目配置文件和缓存目录，包括运行配置、代码样式设置等。
+- `*.iml`：IntelliJ IDEA 的模块配置文件。
+- `*.ipr`：IntelliJ IDEA 的项目配置文件。
+- `*.iws`：IntelliJ IDEA 的工作区配置文件。
+
+### Eclipse
+- `.classpath` 和 `.project`：Eclipse 的项目配置文件，用于存储项目的构建路径和模块设置。
+- `.settings/`：Eclipse 的项目配置文件目录，包括代码样式、运行配置等。
+
+### Android Studio
+- `captures/`：Android Studio 的截图和录制文件目录。
+- `build/`：Android Studio 的构建输出目录。
+- `.gradle/`：Gradle 的缓存目录。
+- `local.properties`：Android Studio 的本地配置文件，用于指定 SDK 路径。
+- `gradle.properties`：Gradle 的全局配置文件。
+- `gradlew` 和 `gradlew.bat`：Gradle Wrapper 的可执行文件。
+
+## 5. 日志文件和临时文件
+
+### 日志文件
+- `*.log`：各种日志文件，如应用程序日志、系统日志等。
+
+### 临时文件
+- `*.tmp` 和 `*.temp`：临时文件，通常由应用程序或系统生成，用于存储临时数据。
+- `*.bak` 和 `*.backup`：备份文件，通常是原始文件的副本，用于防止数据丢失。
+
+## 6. 版本控制系统相关的文件
+
+### Git
+- `.git/lfs/locks/`：Git LFS（Large File Storage）生成的文件锁目录。
+
+### Mercurial
+- `.hg/`：Mercurial 的版本控制目录，包含项目的历史记录和配置信息。
+
+### Subversion
+- `.svn/`：Subversion 的版本控制目录，包含项目的历史记录和配置信息。
+
+### Bazaar
+- `.bazaar/`：Bazaar 的版本控制目录，包含项目的历史记录和配置信息。
+
+## 7. 二进制文件
+
+### 可执行文件和动态链接库
+- `*.exe`（Windows）：Windows 系统的可执行文件。
+- `*.dll`（Windows）：Windows 系统的动态链接库文件。
+- `*.so`（Linux）：Linux 系统的共享对象文件。
+- `*.dylib`（macOS）：macOS 系统的动态链接库文件。
+
+## 8. 大型文件和数据集
+
+### 数据文件和数据集
+- `data/` 和 `datasets/`：常用的文件夹名称，用于存储大型数据文件和数据集。
+
+## 9. 敏感信息文件
+
+### 环境配置文件
+- `env/*`：通常用于存储项目的环境配置信息，如数据库连接字符串、API 密钥等。
+
+### 配置文件
+- `.settings/` 和 `config/local/*`：项目配置文件，可能包含敏感信息，如数据库密码、密钥等。
+
+### 其他敏感文件
+- `.whiskey`：可能包含敏感信息的文件，如安全配置文件或密钥文件。
